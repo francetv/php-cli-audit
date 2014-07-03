@@ -19,4 +19,4 @@ if (!$loaded) {
     );
 }
 
-Ftven\Build\Cli\CliApplication::runApplication(basename(__FILE__));
+Ftven\Build\Cli\Application\CliApplication::runApplication(basename(__FILE__));
