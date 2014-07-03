@@ -1,5 +1,16 @@
 parameters:
 
+  audit.commands.git.class: Ftven\Build\Cli\Extension\Audit\Command\GitCommand
+
+  phppro.audit.auditFactory.class: Phppro\Framework\Audit\AuditFactory
+
 
 services:
-
+  phppro.audit.auditFactory:
+    class: %phppro.audit.auditFactory.class%
+  audit.commands.git:
+    class: %audit.commands.git.class%
+    tags:
+      - {name: cli.command}
+    calls:
+      - [setAuditFactory, [@phppro.audit.auditFactory]]
