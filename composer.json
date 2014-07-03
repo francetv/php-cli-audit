@@ -1,29 +1,38 @@
 {
-    "name": "ftven/php-cli-audit",
+    "name": "ftven/cli-audit",
+    "description": "Audit CLI Tool (PHP QA)",
+    "keywords": ["ftven", "audit", "cli", "test", "qa"],
+    "homepage": "https://github.com/francetv/php-cli-audit",
     "require": {
-        "ftven/php-cli-common":            "dev-master",
-        "ftven/php-cli-common-lib":        "dev-master",
-        "phppro/audit-lib":                "1.*"
+        "ftven/cli-common": "1.*",
+        "phppro/audit-lib": "dev-develop"
     },
     "require-dev": {
-        "phpunit/phpunit": "*",
-        "herrera-io/phar-update": "*",
+        "phpunit/phpunit": "4.*",
         "kherge/box": "*"
     },
     "license": "MIT",
     "authors": [
         {
             "name": "Olivier Hoareau",
-            "email": "olivier@phppro.fr"
+            "email": "olivier@phppro.fr",
+            "homepage": "http://www.phppro.fr",
+            "role": "Lead Developer"
         }
     ],
+    "support": {
+        "email": "olivier@phppro.fr"
+    },
     "minimum-stability": "stable",
+    "suggest": {
+    },
     "autoload": {
-        "psr-0": {
-            "": "src/"
+        "psr-4": {
+            "Ftven\\Build\\": "src/"
         }
     },
     "config": {
         "bin-dir": "bin/"
-    }
+    },
+    "bin": ["bin/audit"]
 }

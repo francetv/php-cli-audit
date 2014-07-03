@@ -1,4 +1,4 @@
-Audit CLI
+AUDIT CLI
 =========
 
 Audit CLI is a command line tool (CLI) providing useful commands to audit PHP projects source code.

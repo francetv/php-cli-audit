@@ -1,7 +1,7 @@
 <?php
 
 /*
- * This file is part of the Testing-CLI package.
+ * This file is part of the AUDIT CLI package.
  *
  * (c) France Télévisions Editions Numériques <guillaume.postaire@francetv.fr>
  *
