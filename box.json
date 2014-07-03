@@ -1,0 +1,24 @@
+{
+    "chmod": "0755",
+    "directories": [
+        "src"
+    ],
+    "files": [
+        "LICENSE"
+    ],
+    "finder": [
+        {
+            "name": [
+                "*.php",
+                "*.yml",
+                "*.twig"
+            ],
+            "exclude": ["Tests", "tests", "demo", "herrera-io/box", "kherge"],
+            "in": "vendor"
+        }
+    ],
+    "git-version": "package_version",
+    "main": "bin/audit",
+    "output": "build/audit.phar",
+    "stub": true
+}

@@ -1,0 +1,29 @@
+{
+    "name": "ftven/php-cli-audit",
+    "require": {
+        "ftven/php-cli-common":            "dev-master",
+        "ftven/php-cli-common-lib":        "dev-master",
+        "phppro/audit-lib":                "1.*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*",
+        "herrera-io/phar-update": "*",
+        "kherge/box": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Olivier Hoareau",
+            "email": "olivier@phppro.fr"
+        }
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-0": {
+            "": "src/"
+        }
+    },
+    "config": {
+        "bin-dir": "bin/"
+    }
+}
